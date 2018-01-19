@@ -1,4 +1,11 @@
 # encoding: utf-8
+
+unless defined? require_relative
+  def require_relative(path)
+    require path
+  end
+end
+
 require_relative 'helper'
 
 class GrammarTest < Minitest::Test

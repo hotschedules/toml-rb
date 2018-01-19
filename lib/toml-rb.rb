@@ -1,5 +1,11 @@
 require 'citrus'
 
+unless defined? require_relative
+  def require_relative(path)
+    require path
+  end
+end
+
 require_relative "toml-rb/errors"
 require_relative "toml-rb/array"
 require_relative "toml-rb/string"

@@ -1,3 +1,9 @@
+unless defined? require_relative
+  def require_relative(path)
+    require path
+  end
+end
+
 require_relative 'helper'
 require_relative 'toml_examples'
 require 'json'
